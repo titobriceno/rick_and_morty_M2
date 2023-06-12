@@ -1,9 +1,10 @@
-import Card from './Card';
+import Card from '../card/Card';
+import style from "./cards.module.scss"
 
 export default function Cards({characters}) {
 
    return (
-   <div>
+   <div className={style.container}>
       {characters.map((character)=>{
          // para que muestre el objeto en consola se debe poner las llave a las props
          console.log(character.origin.name)

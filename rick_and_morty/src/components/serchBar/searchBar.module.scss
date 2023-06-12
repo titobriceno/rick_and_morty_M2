@@ -1,0 +1,27 @@
+@use "../scss/variables.scss" as var;
+
+
+.serch_bar{
+
+
+  .serch_input{
+    margin: .5em;
+    padding: .5em;
+    border-radius: var.$border-radius-base;
+    font-family: var.$principal-font;
+    font-size: var.$font-size-m;
+  }
+  .serch_buton{
+    margin-right: 1em;
+    margin-left: .5em;
+    padding: .5em;
+    border-radius: var.$border-radius-base;
+    background-color: var.$color-green;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: var.$principal-font;
+    font-size: var.$font-size-m;
+  }
+
+
+}

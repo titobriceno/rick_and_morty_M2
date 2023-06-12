@@ -1,0 +1,52 @@
+@use "../scss/variables.scss" as var;
+
+.container{
+  .section{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 11em;
+    width: 100%;
+    background-color: var.$color-darkBlue;
+
+    .logo{
+      max-height: 13em;
+      max-width: 60vw;
+      display: flex;
+
+    }
+    .logo_img{
+      max-height: 10em;
+      max-width: 43em;
+    
+    }
+    .imgRick{
+      max-height: 13em;
+      max-width: 43em;
+     
+    }
+    .imgRick_img{
+      max-height: 13em;
+      max-width: 43em;
+    
+    }
+  }
+  
+  .filter{
+    background-color: var.$color-lightBlue;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    .filter_span{
+      margin: .5em;
+      font-family: var.$principal-font;
+      color: var.$color-white;
+      font-size: var.$font-size-m;
+      font-weight: 500;
+    }
+  }
+  
+
+}
+

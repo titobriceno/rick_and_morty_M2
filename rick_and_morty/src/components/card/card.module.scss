@@ -1,0 +1,67 @@
+@use "../scss/variables.scss" as var;
+
+.container{
+  width: 16em;
+  height: 26em;
+  border-radius: 10px;
+  background-color: var.$color-softBlue;
+  margin: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .5s, color 10s;
+  -webkit-transition: .5, color .10s;
+  -moz-transition: .5, color .10s ;
+    
+
+  .container_img{
+    margin: .5em;
+ 
+    border-radius: 10px;
+
+    .pj_img{
+      border-radius: 10px;
+      max-width: 16em;
+      max-height: 18em;
+    }
+  }
+  .container_data{
+    font-family: var.$principal-font;
+    font-size:  var.$font-size-m;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+    align-items: center;
+    
+
+    .container_btn{
+      padding-top: .5em;
+      padding-bottom: .5em;
+      margin: .5em;
+      width:8em;
+      cursor: pointer;
+      background-color: var.$color-green;
+      border-radius: var.$border-radius-sm;
+    }
+    
+    .container_name{
+      font-weight: 900;
+      color: var.$color-green;
+      font-size: 1.5em;
+    }
+    .container_text{
+      color: var.$color-white;
+    }
+
+    
+  }
+
+}
+.container:hover{
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px)
+  -moz-transform;translate: (0px, 5px);
+}
