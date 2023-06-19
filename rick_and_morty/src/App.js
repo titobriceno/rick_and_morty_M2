@@ -24,11 +24,20 @@ function App() {
     );
   }
 
+  const onClose = (id)=>{
+    const idPj = Number(id)
+    const newListPj = characters.filter((character) =>{
+      return character.id !== idPj
+    })
+    setCharacters(newListPj)
+
+  }
+
   return (
     <div className="App">
       <NavBar onSearch={onSearch} />
       <Filters />
-      <Cards characters={characters} />
+      <Cards characters={characters} onClose={onClose} />
     </div>
   );
 }
